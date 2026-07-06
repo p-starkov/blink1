@@ -69,6 +69,10 @@ void loop() {
                 lcd.setCursor(0, 0);    // курсор в начало первой строки
                 lcd.print("Count: ");
                 lcd.print(counter);     // выводим число отдельно — так работает правильно
+
+                lcd.setCursor(0, 1);    // столбец 0, строка 1 — вторая строка
+                lcd.print("Dist: ");
+                lcd.print(counter * 0.57);    // ваша переменная с расстоянием
             }
         }
     }
